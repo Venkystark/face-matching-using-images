@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Matching Web App</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Face Detection</h1>
+  <div id="camera-container">
+    <video id="video" width="600" height="440" autoplay></video>
+    <button id="capture-btn">Capture</button>
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+  <div id="result-container">
+    <h2>Match Result:</h2>
+  </div>
+   <img src="" id="res" alt="resultimage" width="600" height="400">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
